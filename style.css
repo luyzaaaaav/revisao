@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    background: #f9f9ff; /* Cor de fundo suave */
+    color: #ffffff; /* Cor principal do texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+header {
+    background-color:#000000; 
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o  título */
+    padding: 30px 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra */
+    margin-bottom: 30px;
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 2.2rem; /* Tamanho maior para destaque */
+    font-weight: bold;
+    color: #fff;
+}
+ 
+h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000000; 
+}
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px auto;
+}
+ 
+p {
+    max-width: 900px; /* Largura máxima para melhor leitura */
+    margin: 15px auto; /* Centraliza horizontalmente */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    font-size: 1.1rem;
+    padding: 0 15px; /* Espaço lateral */
+    text-align: justify; /* Texto justificado */
+}
+
+.galeria {
+    display: flex; /* Organiza em linha */
+    flex-wrap: wrap; /* Quebra linha em telas menores */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaço entre os elementos */
+    padding: 30px 15px;
+}
+ 
+.imagem-container {
+    justify-self: center;
+    background: white; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    overflow: hidden; /* Impede que imagem ultrapasse a borda */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+    text-align: center; /* Centraliza legenda */
+    display: flex;
+    width: auto;
+    margin: 30px;
+}
+ 
+.imagem-container img {
+    width: 400px; /* Faz a imagem ocupar todo o espaço do container */
+    height: auto; /* Mantém proporção */
+    display: block;
+    object-fit: fill;
+}
+ 
+.containerdivisao {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+}
+ 
+.imagem-container p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555; /* Cinza escuro */
+}
+ 
+/* EFEITO AO PASSAR O MOUSE (hover) */
+.imagem-container:hover {
+    transform: scale(1.05); /* Aumenta levemente */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25); /* Sombra mais forte */
+}
+ 
+.apresentacao {
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem; /* Reduz tamanho do título */
+    }
+ 
+    p {
+        font-size: 1rem; /* Texto menor para caber melhor */
+    }
+ 
+    .imagem-container {
+        max-width: 90%; /* Imagem ocupa quase toda a tela */
+    }
+}
